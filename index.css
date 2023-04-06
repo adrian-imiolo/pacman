@@ -1,0 +1,115 @@
+html,
+body {
+    margin: 10;
+    padding: 10;
+
+    color: white;
+}
+
+html {
+    background: rgb(114, 102, 114)
+}
+
+body {
+
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 420px;
+    border: solid black;
+    margin: 0 auto
+}
+
+.grid div {
+    width: 15px;
+    height: 15px;
+}
+
+.pac-dot {
+    background-color: yellow;
+    border: 5px solid rgb(114, 102, 114);
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.power-pellet {
+    background-color: green;
+    border-radius: 7.5px;
+}
+
+.pacman {
+    z-index: 99;
+    text-align: center;
+
+    background-color: rgb(255, 196, 0);
+    border-radius: 50%;
+}
+
+/* .pacman::after {
+    content: "😶";
+    transform: scale(.9)
+} */
+
+.blinky {
+    background-color: rgb(114, 102, 114);
+    border: none;
+}
+
+.blinky::before {
+    content: "👻"
+}
+
+.pinky {
+    background-color: rgb(114, 102, 114);
+    border: none;
+}
+
+.pinky::before {
+    content: "👻"
+}
+
+.inky {
+    background-color: rgb(114, 102, 114);
+    border: none;
+}
+
+.inky::before {
+    content: "👻"
+}
+
+.clyde {
+    background-color: rgb(114, 102, 114);
+    border: none;
+}
+
+.clyde::before {
+    content: "👻"
+}
+
+.scared-ghost {
+
+    border: none;
+}
+
+.scared-ghost::before {
+    content: "😱"
+}
+
+.blinky,
+.inky,
+.pinky,
+.clyde {
+    z-index: 98;
+}
